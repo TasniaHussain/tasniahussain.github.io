@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Tasnia Hussain</title>
+</head>
+<body>
+  <header>
+    <nav class="nav-right">
+      <a href="index.html" style="margin-right: 20px;">Vita</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="site-title">Tasnia Hussain</div>
+  </header>
+
+  <main class="author-container">
+    <div class="author-header">
+      <div class="profile-photo">
+        <img src="your-profile-photo.jpg" alt="Tasnia Hussain" />
+      </div>
+      <div class="author-info">
+        <h1 class="author-name">Contact Me</h1>
+        <div class="authour-bio">
+          <p style="text-align: justify;">
+            If you'd like to get in touch, feel free to send me an email or reach out on social media.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="research-section-container">
+      <div class="section-header">
+        <h2 class="section-title">Send a Message</h2>
+      </div>
+      
+      <form action="submit_form.php" method="POST" class="paper">
+        <div class="paper-text">
+          <label for="name" class="paper-category">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email" class="paper-category">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message" class="paper-category">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="pdf-link">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tasnia Hussain</p>
+  </footer>
+</body>
+</html>
