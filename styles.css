@@ -6,6 +6,18 @@
     box-sizing: border-box;
     font-family: 'Crimson Text', serif;
 }
+html, body {
+    height: 100%;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, content, footer */
+    min-height: 100vh;
+    background-color: #f4eeec;
+    color: #222;
+    line-height: 1.6;
+    padding-top: 90px; /* Spacing for fixed header */
+}
 
 header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
