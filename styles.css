@@ -416,7 +416,6 @@ footer {
     border-radius: 8px; /* Matches the design aesthetic */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Consistent shadow */
     overflow: hidden; /* Prevent overflow */
-    min-height: 80vh;
     height: 90%;
 }
 
@@ -447,7 +446,6 @@ footer {
     color: #222; /* Default text color */
     line-height: 1.6; /* Enhances readability */
     max-width: 95%;
-    min-height: 65vh;
     height: 60%;
     margin: 1rem auto;
     padding: 1rem; /* padding instead of margin on iframe */
