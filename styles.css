@@ -505,7 +505,11 @@ p {
     justify-content: center;
     align-items: center;
     margin: 2rem auto;
-    max-width: 100%;
+    max-width: calc(100% - 2rem); /* Adds a small gap on both sides */
+    padding: 1rem; /* Optional: adds internal padding for visual balance */
+    background-color: #fff; /* Ensures a clean background */
+    border-radius: 8px; /* Matches the design aesthetic */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Consistent with other sections */
 }
 
 .pdf-link {
