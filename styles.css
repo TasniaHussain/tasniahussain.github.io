@@ -444,6 +444,13 @@ footer {
     font-family: 'Crimson Text', serif; /* Matching body font */
     color: #222; /* Default text color */
     line-height: 1.6; /* Enhances readability */
+    height: 80vh;
+}
+.vita-content iframe.pdf-viewer {
+    flex-grow: 1; /* fill available space */
+    width: 100%;   /* full width */
+    border: none;  /* optional */
+    min-height: 600px; /* or any minimum height you want */
 }
 
 .vita-section {
