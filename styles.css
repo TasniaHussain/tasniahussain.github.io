@@ -417,6 +417,7 @@ footer {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Consistent shadow */
     overflow: hidden; /* Prevent overflow */
     min-height: 80vh;
+    height: 90%;
 }
 
 .vita-header {
