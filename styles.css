@@ -456,13 +456,6 @@ footer {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     overflow: hidden; /* prevents iframe overflow */
 }
-.vita-content iframe.pdf-viewer {
-    flex-grow: 1; /* Fill available space */
-    max-width: 100%; /* Constrain to the container's width */
-    height: calc(100% - 20px); /* Adjust for any padding */
-    border-radius: 8px; /* Match container styling */
-    overflow: hidden; /* Prevent overflow */
-}
 
 .vita-section {
     margin-bottom: 2rem;
