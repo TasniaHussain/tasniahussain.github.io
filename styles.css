@@ -284,47 +284,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .author-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .profile-photo {
-        margin-right: 0;
-        margin-bottom: 1.5rem;
-    }
-
-    .paper {
-        flex-direction: column;
-    }
-
-    .paper img {
-        max-width: 100%;
-        margin-top: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .nav-left, .nav-right {
-        gap: 0.8rem;
-    }
-
-    .author-name {
-        font-size: 2rem;
-    }
-
-    .section-title {
-        font-size: 1.6rem;
-    }
-}
-
-p {
-    margin-bottom: 16px;
-}
-
 .fade-in-element {
     opacity: 0; /* Initially hidden */
 }
@@ -448,11 +407,11 @@ p {
     border-bottom-color: #d65039;
 }
 .vita-container {
-    max-width: 1200px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background-color: white; /* Same background as contact */
-    border-radius: 8px;
+    max-width: calc(100% - 2rem); /* Nearly full width with a small gap */
+    margin: 3rem auto; /* Centered with a gap around it */
+    padding: 2rem; /* Optional: internal spacing for better appearance */
+    background-color: white; /* Ensures a consistent background */
+    border-radius: 8px; /* Matches the design aesthetic */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Consistent shadow */
 }
 
@@ -539,4 +498,40 @@ p {
     .vita-section-title {
         font-size: 1.5rem;
     }
+    .author-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .paper {
+        flex-direction: column;
+    }
+
+    .paper img {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 576px) {
+    .nav-left, .nav-right {
+        gap: 0.8rem;
+    }
+
+    .author-name {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+}
+
+p {
+    margin-bottom: 16px;
 }
