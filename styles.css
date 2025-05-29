@@ -466,6 +466,7 @@ footer {
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  max-width: fit-content;
 }
 
 .vita-download-button i {
