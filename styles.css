@@ -441,6 +441,7 @@ footer {
 .vita-content {
     display: flex;
     flex-direction: column; /* Adjust layout for responsiveness */
+    align-items: center;
     gap: 1.5rem;
     font-family: 'Crimson Text', serif; /* Matching body font */
     color: #222; /* Default text color */
@@ -461,7 +462,7 @@ footer {
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
-  background-color: #244855;
+  background-color: #ac9b8e;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -474,7 +475,7 @@ footer {
 }
 
 .vita-download-button:hover {
-  background-color: #552C24;
+  background-color: #536471;
   transform: scale(1.05);
 }
 
