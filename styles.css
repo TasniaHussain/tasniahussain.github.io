@@ -509,6 +509,13 @@ footer {
     background-color: #fff; /* Ensures a clean background */
     border-radius: 8px; /* Matches the design aesthetic */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Consistent with other sections */
+    overflow: hidden;
+}
+.pdf-container iframe {
+    width: 100%; /* Ensures the iframe fills its container */
+    height: 80vh; /* Occupies most of the viewport height */
+    border: none; /* Removes the default iframe border */
+    overflow: auto; /* Enables scrolling within the iframe */
 }
 
 .pdf-link {
@@ -524,6 +531,11 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .pdf-container iframe {
+        height: 60vh; /* Reduces height for smaller screens */
+        transform: scale(1); /* Ensures no zoom */
+        transform-origin: top left; /* Keeps scaling consistent */
+    }
     .contact-content {
         flex-direction: column;
     }
