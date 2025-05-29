@@ -461,7 +461,7 @@ footer {
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
-  background-color: #007bff;
+  background-color: #244855;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -474,7 +474,7 @@ footer {
 }
 
 .vita-download-button:hover {
-  background-color: #0056b3;
+  background-color: #552C24;
   transform: scale(1.05);
 }
 
