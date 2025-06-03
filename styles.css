@@ -4,6 +4,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, content, footer */
+    min-height: 100vh;
+    background-color: #f4eeec;
+    color: #222;
+    line-height: 1.6;
+    padding-top: 90px; /* Spacing for fixed header */
 }
 
 header {
@@ -38,10 +51,9 @@ body {
     margin: 0;
 }
 
-/* the banner - the cream coloured box */
+/* the banner */
 body {
     background-color: #f4eeec;
-   /*background-color: #F7F5F0;*/
     color: #222;
     line-height: 1.6;
     z-index: 10;
@@ -49,15 +61,13 @@ body {
 }
 
 .author-name {
-    /*font-family: 'Crimson Pro', serif;*/
-    font-family: 'Canela', serif ;
-    font-weight: 20;
-    font-size: 2.5rem;
-    /*text-transform: uppercase;*/
-    letter-spacing: 0.07em;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     margin-bottom: 1rem;
-    /*color: #ac9b8e;*/
-  color: #000000;
+    color: #ac9b8e;
 }
 
 /* Profile photo */
@@ -112,9 +122,8 @@ nav a {
 }
 
 .site-title {
-   font-family: 'Georgia', serif;
     font-style: oblique;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 1.5rem;
 }
 
@@ -136,20 +145,11 @@ nav a {
     max-width: 65%; /* Limits the width of the bio section */
 }
 
-.inter-<uniquifier> {
-  font-family: "Inter", Sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
-.author-bio {
-    font-family: 'Inter', sans-serif !important;
+.authour-bio {
+    font-family: 'Crimson Text', serif;
     font-size: 1.22rem;
     line-height: 1.7;
     max-width: 900px;
-    color: #6F6F6F;
 }
 
 .author-bio a {
@@ -175,16 +175,13 @@ nav a {
     margin: 0 auto 2rem;
     padding: 0 2rem;
     position: relative;
-    font-weight: 100;
-  color:  #373633;
-
 }
 
 .section-title {
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-weight: 100;
+    font-weight: bold;
     display: inline-block;
     margin-bottom: 1rem;
 }
@@ -236,8 +233,8 @@ nav a {
 }
 
 .paper-category {
-    font-family: 'Inter', serif;
-    font-size: 1.0rem;
+    font-family: 'Crimson Text', serif;
+    font-size: 0.95rem;
     font-weight: bolder;
     color: #d65039;
     margin-bottom: 0.5rem;
@@ -264,12 +261,10 @@ nav a {
 }
 
 .paper-abstract {
-    font-size: 1.4rem;
-  font-weight: 100; 
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     margin-right: 3rem;
-    color: #504e49;
-    font-family: 'Crimson Text', serif;
+    color: #444;
 }
 
 .paper-meta {
@@ -281,53 +276,12 @@ nav a {
 
 footer {
     text-align: center;
+    align-content: end;
     padding: 2rem;
     background-color: #f9f9f7;
     border-top: 1px solid #e6e6e6;
     color: #666;
     font-size: 0.9rem;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .author-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .profile-photo {
-        margin-right: 0;
-        margin-bottom: 1.5rem;
-    }
-
-    .paper {
-        flex-direction: column;
-    }
-
-    .paper img {
-        max-width: 100%;
-        margin-top: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .nav-left, .nav-right {
-        gap: 0.8rem;
-    }
-
-    .author-name {
-        font-size: 2rem;
-    }
-
-    .section-title {
-        font-size: 1.6rem;
-        ; 
-    }
-}
-
-p {
-    margin-bottom: 16px;
 }
 
 .fade-in-element {
@@ -354,4 +308,282 @@ p {
 .author-container.visible {
     opacity: 1;
     transform: translateY(0);
+}
+.contact-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-title {
+    font-family: 'Crimson Pro', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ac9b8e;
+}
+
+.contact-intro {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.contact-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-form, .contact-details {
+    flex: 1;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Crimson Text', serif;
+}
+
+.contact-form .submit-button {
+    background-color: #d65039;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Crimson Pro', serif;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #a33626;
+}
+
+.contact-details h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #244855;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+.contact-details i {
+    margin-right: 0.5rem;
+    color: #d65039;
+}
+
+.contact-details a {
+    color: #244855;
+    text-decoration: none;
+    border-bottom: 1px solid #244855;
+}
+
+.contact-details a:hover {
+    color: #d65039;
+    border-bottom-color: #d65039;
+}
+.vita-container {
+    display: block; /* Ensures it behaves as a block-level element */
+    width: calc(100% - 2rem); /* Full width minus the gap */
+    max-width: 95%; /* Adds an upper limit to prevent excessive stretching */
+    margin: 1rem auto; /* Centered with a gap around it */
+    padding: 2rem; /* Optional: internal spacing for better appearance */
+    background-color: white; /* Ensures a consistent background */
+    border-radius: 8px; /* Matches the design aesthetic */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+    overflow: hidden; /* Prevent overflow */
+    min-height: 80vh;
+}
+
+.vita-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.vita-title {
+    font-family: 'Crimson Pro', serif; /* Matching font */
+    font-size: 2.5rem; /* Consistent size with contact-title */
+    font-weight: bold;
+    color: #ac9b8e; /* Matching title color */
+    margin-bottom: 1rem;
+}
+
+.vita-intro {
+    font-size: 1.2rem; /* Same as contact-intro */
+    color: #555; /* Consistent text color */
+    text-align: center; /* Ensures uniform look */
+}
+
+.vita-content {
+    display: flex;
+    flex-direction: column; /* Adjust layout for responsiveness */
+    align-items: center;
+    gap: 1.5rem;
+    font-family: 'Crimson Text', serif; /* Matching body font */
+    color: #222; /* Default text color */
+    line-height: 1.6; /* Enhances readability */
+    max-width: 95%;
+    margin: 1rem auto;
+    padding: 1rem; /* padding instead of margin on iframe */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    min-height: 65vh;
+}
+.vita-download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ac9b8e;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  max-width: fit-content;
+}
+
+.vita-download-button i {
+  margin-right: 8px; /* Space between the icon and text */
+}
+
+.vita-download-button:hover {
+  background-color: #536471;
+  transform: scale(1.05);
+}
+
+.vita-download-button:active {
+  transform: scale(0.95);
+}
+
+.vita-section {
+    margin-bottom: 2rem;
+}
+
+.vita-section-title {
+    font-size: 1.8rem; /* Slightly smaller than title */
+    font-weight: bold;
+    color: #244855; /* Complementary heading color */
+    margin-bottom: 0.5rem;
+}
+
+.vita-section-content {
+    font-size: 1.1rem;
+    color: #444; /* Lighter for contrast */
+}
+
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: calc(100% - 2rem); /* Adds a small gap on both sides */
+    padding: 1rem; /* Optional: adds internal padding for visual balance */
+    background-color: #fff; /* Ensures a clean background */
+    border-radius: 8px; /* Matches the design aesthetic */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Consistent with other sections */
+    overflow: hidden;
+}
+.pdf-container iframe {
+    width: 100%; /* Ensures the iframe fills its container */
+    height: 80vh; /* Occupies most of the viewport height */
+    border: none; /* Removes the default iframe border */
+    overflow: auto; /* Enables scrolling within the iframe */
+}
+
+.pdf-link {
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+    color: #d65039; /* Matching PDF link color */
+    text-decoration: none;
+}
+
+.pdf-link:hover {
+    color: #a33626; /* Same hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pdf-container iframe {
+        height: 60vh; /* Reduces height for smaller screens */
+        transform: scale(1); /* Ensures no zoom */
+        transform-origin: top left; /* Keeps scaling consistent */
+    }
+    .contact-content {
+        flex-direction: column;
+    }
+    .vita-container {
+        padding: 1.5rem;
+    }
+
+    .vita-title {
+        font-size: 2rem;
+    }
+
+    .vita-section-title {
+        font-size: 1.5rem;
+    }
+    .author-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .paper {
+        flex-direction: column;
+    }
+
+    .paper img {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 576px) {
+    .nav-left, .nav-right {
+        gap: 0.8rem;
+    }
+
+    .author-name {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+}
+
+p {
+    margin-bottom: 16px;
 }
