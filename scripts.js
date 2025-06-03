@@ -22,3 +22,9 @@ window.addEventListener('DOMContentLoaded', () => {
   const author = document.querySelector('.author-container');
   author.classList.add('visible');
 });
+
+function toggleAbstract(button) {
+  const abstract = button.previousElementSibling;
+  abstract.classList.toggle("expanded");
+  button.textContent = abstract.classList.contains("expanded") ? "Read less" : "Read more";
+}

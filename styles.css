@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Crimson Text', serif;
+    /*font-family: 'Computer', serif*/;
 }
 html, body {
     height: 100%;
@@ -20,9 +20,10 @@ body {
 }
 
 header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);*/
     position: relative; /* if not already set */
     z-index: 10; /* ensure it stays on top */
+
 }
 
 /* Header styles */
@@ -32,7 +33,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 0.5px solid #777777;
     background-color: white;
 }
 
@@ -43,7 +44,7 @@ header {
     width: 100%;
     height: 70px;
     z-index: 1000; /* make sure it's above other content */
-    padding: 10px 20px; /* adjust padding as needed */
+    padding: 10px 20px; /* adjust padding */
 }
 
 body {
@@ -53,7 +54,8 @@ body {
 
 /* the banner */
 body {
-    background-color: #f4eeec;
+    /* background-color:  #f8f5f3;*/ 
+    background-color:  #faf8f8;
     color: #222;
     line-height: 1.6;
     z-index: 10;
@@ -61,24 +63,28 @@ body {
 }
 
 .author-name {
-    font-family: 'Crimson Pro', serif;
-    font-weight: 700;
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    /*font-family: 'Crimson Pro', serif;*/
+    font-family: 'Canela', serif ;
+    font-weight: 20;
+    font-size: 2.5rem;
+    /*text-transform: uppercase;*/
+    letter-spacing: 0.07em;
     margin-bottom: 1rem;
-    color: #ac9b8e;
+    /*color: #ac9b8e;*/
+  color: #030302;
 }
+
 
 /* Profile photo */
 .profile-photo {
-    width: 250px;
-    height: 250px;
+    margin-top: 2rem;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background-color: #e6e6e6;
     overflow: hidden;
     margin-right: 4rem;
-    border: 0.0px solid white;
+    border: 0.4px solid rgb(100, 92, 92);
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -86,7 +92,7 @@ body {
     color: #999;
     font-size: 0.8rem;
     text-align: center;
-    flex-shrink: 0; /* Prevents the photo from shrinking */
+    flex-shrink: 0; /* Prevents the photo from shrinking */;
 }
 
 .profile-photo img {
@@ -122,16 +128,21 @@ nav a {
 }
 
 .site-title {
+   font-family: 'Georgia', serif;
     font-style: oblique;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1.5rem;
 }
 
 /* Author profile styles */
 .author-container {
+    display: flex;
+    align-items: center;
     max-width: 1200px;
+     justify-content: center; 
     margin: 3rem auto;
-    padding: 0 2rem;
+     gap: 2rem;
+    padding: 0rem 2rem;
 }
 
 .author-header {
@@ -145,12 +156,21 @@ nav a {
     max-width: 65%; /* Limits the width of the bio section */
 }
 
-.authour-bio {
-    font-family: 'Crimson Text', serif;
-    font-size: 1.22rem;
+.inter-<uniquifier> {
+  font-family: "Inter", Sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.author-bio {
+    font-family: 'Inter' !important;
+    font-size: 1.45rem;
     line-height: 1.7;
     max-width: 900px;
+    color: #6F6F6F;
 }
+
 
 .author-bio a {
     color: inherit;
@@ -167,7 +187,7 @@ nav a {
     background-color: white;
     padding: 3rem 0;
     margin-top: 3rem;
-    border-top: 1px solid #e6e6e6;
+    /*border-top: 1px solid #e6e6e6;*/
 }
 
 .section-header {
@@ -176,12 +196,11 @@ nav a {
     padding: 0 2rem;
     position: relative;
 }
-
 .section-title {
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    font-weight: bold;
+    font-weight: 100;
     display: inline-block;
     margin-bottom: 1rem;
 }
@@ -190,8 +209,8 @@ nav a {
     content: "";
     display: block;
     width: 100%;
-    height: 1px;
-    background-color: #222;
+    height: 0.5px;
+    background-color: #686363;
     margin-top: 0.5rem;
 }
 
@@ -225,6 +244,7 @@ nav a {
     flex: 3;
 }
 
+
 .paper img {
     flex: 1;
     max-width: 200px;
@@ -233,8 +253,8 @@ nav a {
 }
 
 .paper-category {
-    font-family: 'Crimson Text', serif;
-    font-size: 0.95rem;
+    font-family: 'Inter', serif;
+    font-size: 1.0rem;
     font-weight: bolder;
     color: #d65039;
     margin-bottom: 0.5rem;
@@ -243,11 +263,15 @@ nav a {
 }
 
 .paper-title {
-    font-size: 1.85rem;
-    color: #244855;
+    font-family:'Canela';
+    font-weight: 20;
+    font-size: 2.0rem;
+    color: #19202c;
     margin-bottom: 1rem;
-    font-weight: bold;
+    font-weight: 300;
+    letter-spacing: 0.02em;
 }
+
 
 .pdf-link {
     font-size: 1.4rem;
@@ -261,17 +285,22 @@ nav a {
 }
 
 .paper-abstract {
-    font-size: 1.2rem;
+    font-size: 1.45rem;
+    /*font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
     margin-bottom: 1rem;
     margin-right: 3rem;
-    color: #444;
+    color: #4e4d4d;
 }
 
 .paper-meta {
     font-family: 'Crimson Text', serif;
     font-style: normal;
     color: #666;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 footer {
@@ -470,6 +499,7 @@ footer {
   max-width: fit-content;
 }
 
+
 .vita-download-button i {
   margin-right: 8px; /* Space between the icon and text */
 }
@@ -487,6 +517,19 @@ footer {
     margin-bottom: 2rem;
 }
 
+.read-more-button {
+  font-family: 'Cambria';
+  background: none;
+  border: none;
+    border-bottom: 1px solid #aaa; /* Subtle underline */
+  border-bottom-color: #40525e;
+  color: #4a6f88;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding-top: 0.5em;
+  font-style: italic;
+}
+
 .vita-section-title {
     font-size: 1.8rem; /* Slightly smaller than title */
     font-weight: bold;
@@ -499,7 +542,20 @@ footer {
     color: #444; /* Lighter for contrast */
 }
 
+  nav a {
+    font-size: 1rem; /* default for mobile */
+    margin-right: 20px;
+  }
+
+  /* On larger screens, increase font size */
+  @media (min-width: 768px) {
+    nav a {
+      font-size: 1.25rem; /* bigger font on laptops/desktops */
+    }
+  }
+
 .pdf-container {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -543,6 +599,12 @@ footer {
         padding: 1.5rem;
     }
 
+       nav a {
+      font-size: 1.25rem; /* bigger font on laptops/desktops */
+    }
+
+    
+
     .vita-title {
         font-size: 2rem;
     }
@@ -569,21 +631,102 @@ footer {
         max-width: 100%;
         margin-top: 1rem;
     }
+
+    
 }
+
 @media (max-width: 576px) {
     .nav-left, .nav-right {
+    gap: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .site-title {
+    font-size: 1rem; /* downscale title on mobile */
+  }
+     .nav {
         gap: 0.8rem;
+        font-size: 1.0rem;
     }
+
+
 
     .author-name {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
+    .author-bio {
+    font-size: 1.0rem;
+}
+
+.read-more-button {
+  font-size: 1.0rem;
+
+}
+
+.paper-category {
+    font-size: 0.7rem;
+}
+
+.paper-title {
+    font-size: 1.2rem;
+}
+
+.paper-meta {
+    font-size: 1.0rem; 
+}
+.paper-abstract {
+    font-size: 1.0rem;
+
+}
+
     .section-title {
-        font-size: 1.6rem;
+        font-size: 1.0rem;
     }
 }
 
 p {
     margin-bottom: 16px;
 }
+
+.nice-link {
+  color: inherit;           /* Inherits text color */
+  text-decoration: none;    /* Removes underline */
+  border-bottom: 1px solid #aaa; /* Subtle underline */
+  transition: all 0.2s ease;
+}
+
+.nice-link:hover {
+  color: #007acc;           /* Highlight on hover */
+  border-bottom-color: #007acc;
+}
+
+.paper-abstract {
+  max-height: 9em;
+  overflow: hidden;
+  position: relative;
+  line-height: 1.5em;
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  transition: max-height 0.3s ease;
+  text-align: justify;
+}
+
+.paper-abstract.expanded {
+  max-height: none;
+  mask-image: none;
+  -webkit-mask-image: none;
+}
+
+  nav a {
+    font-size: 1rem; /* default for mobile */
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+
+  /* On larger screens, increase font size */
+  @media (min-width: 768px) {
+    nav a {
+      font-size: 1.45rem; /* bigger font on laptops/desktops */
+    }
+  }

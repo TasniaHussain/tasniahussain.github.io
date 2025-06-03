@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -22,20 +23,32 @@
   <header>
 
     <div class="nav-right">
-       <a href="index.html">
-  <button class="menu-button" style="background: none; border: none; padding: 0;">
-    <img src="assets/website_icon.png" alt="Home" style="height: 30px; width: 30px; border-radius: 50%;">
-  </button>
-</a>
-      <nav>
-        <a href="vita.html" style="margin-right: 20px; font-size: 1.2rem">Vita</a>
-        <a href="contact.html" style="font-size: 1.2rem">Contact</a>
-      </nav>
+   
+    <nav>
+  <a href="vita.html">Vita</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+
     </div>
 
-    <div class="nav-right">
-      <div class="site-title">Tasnia Hussain</div>
+      <div class="nav-left">
+   
+    <a href="index.html">
+  <button class="menu-button" style="background: none; border: none; padding: 0;">
+    <img src="assets/website_icon.png" alt="Home" style="height: 50px; width: 50px; border-radius: 50%;">
+  </button>
+</a>
+
     </div>
+
+
+      
+    <!--
+<div class="nav-right">
+  <div class="site-title">Tasnia Hussain</div>
+</div>
+-->
 
   </header>
 
@@ -49,10 +62,10 @@
       <div class="author-info">
         <h1 class="author-name">Tasnia Hussain</h1>
         <div class="author-bio">
-          <p style="text-align: justify">
+          <p style="left-align">
             I am a PhD Candidate in Economics at the University of Toronto specializing in macroeconomics, inequality, and climate change. My job market paper studies the optimal design of carbon policy under the presence of unequal carbon footprints. </p>
 
-          <p style="text-align: justify;"> I am on the job market for 2025/2026. You can find my CV in the Vita tab. </p>
+          <p style="left-align;"> I am on the job market for 2025/2026. You can find my CV in the Vita tab. </p>
 
           </p>
         </div>
@@ -77,9 +90,21 @@
             </a>
 
           </h3>
-          <p class="paper-abstract" style="left-align: justify;">
+          
+          
+     
+
+
+          <div class="abstract-container">
+       <p class="paper-abstract" >
+            
             Rich households generate a disproportionate share of carbon emissions, particularly when the emissions from their investments are accounted for as well as their emissions from consumption. This paper builds a quantitative general-equilibrium model that accounts for inequality in both wealth and emissions and uses it to study the aggregate and distributional effects of carbon taxes. In addition to a uniform tax on all emissions, I consider three targeted policies: (i) a tax on emissions from “basic” energy consumption borne disproportionately by households of low socioeconomic status; (ii) a tax on emissions from consumption borne only by the rich; and a (iii) tax on production emissions borne by shareholders. In a setting where carbon footprints arise from both consumption and production emissions, taxing consumption emissions induces different economic outcomes than taxing production emissions. The production-emissions tax reduces emissions inequality and is welfare improving, despite wages and output falling, but increases wealth inequality by reallocating capital towards highly productive firms. In contrast, the basic consumption tax is the only tool to increase output, but increases inequality along both dimensions. Welfare rises, especially for low productivity groups, due to wages not falling as they do under production-emissions taxes. The luxury-consumption tax reduces emissions inequality slightly but has a negligible effects on aggregate outcomes. These differential economic responses move us away from a world of uniform taxation. The optimal mix of targeted policies with differing taxes on production emissions and consumption emissions yields better economic outcomes than a uniform carbon tax achieving the same reduction in aggregate emissions.
           </p>
+  <button class="read-more-button" onclick="toggleAbstract(this)">Read more</button>
+</div>
+
+
+
           <p class="paper-meta"></p>
         </div>
       </div>
@@ -95,10 +120,17 @@
             </a> -->
           </h3>
 
-          <p class="paper-meta">(With Alvaro Pinzon)</p>
-          <p class="paper-abstract" style="left-align: justify;">
-            Global adoption of renewable energy has increased rapidly since the early 2000s. This is in part due to the learning by doing mechanism. Despite this adoption, the world remains below what is needed in order to reach net-zero by 2030. In this paper, we study the extent to which the Russia-Ukraine war accelerated the transition to renewable energy in Europe. The European Union relied heavily on Russia to fulfill its natural gas demands, particularly for electricity generation purposes. The Russia-Ukraine war disrupted this relationship, creating a supply shock. Countries vary in their exposure to Russian gas, experiencing the supply shock at differing intensities. In this paper, we exploit the variation in import exposure to Russian gas to study the impact of the Russia-Ukraine war on renewable energy in European countries. We use a model to account for general equilibrium effects in which supply shocks spread to less exposed countries via natural gas prices. Preliminary evidence suggests that countries that were more exposed to Russian natural gas experienced quicker transitions post-war relative to their less exposed counterparts. Model results forthcoming.
-          </p>
+          <p class="paper-meta">(With <a href="https://sites.google.com/view/alvaropinzon" class="nice-link" target="_blank" rel="noopener noreferrer">Álvaro Pinzón</a>)</p>
+
+<div class="abstract-container">
+  <p class="paper-abstract">
+    Global adoption of renewable energy has increased rapidly since the early 2000s. This is in part due to the learning by doing mechanism. Despite this adoption, the world remains below what is needed in order to reach net-zero by 2030. In this paper, we study the extent to which the Russia-Ukraine war accelerated the transition to renewable energy in Europe. The European Union relied heavily on Russia to fulfill its natural gas demands, particularly for electricity generation purposes. The Russia-Ukraine war disrupted this relationship, creating a supply shock. Countries vary in their exposure to Russian gas, experiencing the supply shock at differing intensities. In this paper, we exploit the variation in import exposure to Russian gas to study the impact of the Russia-Ukraine war on renewable energy in European countries. We use a model to account for general equilibrium effects in which supply shocks spread to less exposed countries via natural gas prices. Preliminary evidence suggests that countries that were more exposed to Russian natural gas experienced quicker transitions post-war relative to their less exposed counterparts. Model results forthcoming.
+  </p>
+  <button class="read-more-button" onclick="toggleAbstract(this)">Read more</button>
+</div>
+
+
+
 
         </div>
       </div>
@@ -107,10 +139,18 @@
         <div class="paper-text">
           <p class="paper-category">CLIMATE CHANGE AND DEVELOPMENT</p>
           <h3 class="paper-title">Clean Energy Transition Paths under Structural Change</h3>
-          <p class="paper-meta">(With Alvaro Pinzon and Anubha Agarwal)</p>
-          <p style="left-align: justify;" class="paper-abstract">
+           <p class="paper-meta">(With <a href="https://sites.google.com/view/alvaropinzon" class="nice-link" target="_blank" rel="noopener noreferrer">Álvaro Pinzón</a> and <a href="https://www.anubhaagarwal.com/" class="nice-link" target="_blank" rel="noopener noreferrer">Anubha Agarwal</a>  )</p>
+
+          
+          <div class="abstract-container">
+  
+          <p  class="paper-abstract">
             The transition to clean energy is an imperative element of sustainable growth. How are the incentives to invest in the transition to clean energy affected by the level of development of an economy? To answer this question, we link clean energy transitions to the process of structural change - the secular reallocation of labor across sectors in an economy. In this paper, we provide evidence of differential emission levels and clean energy transition rates between economies at different stages of development. We highlight how the process of structural change can impact the proportion of clean vs. dirty energy in an economy using a model of structural change augmented with an energy sector. We model an infinitely-lived closed economy with two final sectors: manufacturing and services, and one intermediate sector: energy. There is one representative and competitive firm in each sector which produces using labor and energy inputs. Energy can be dirty or clean, and the government invests in energy efficiency and in building renewable energy capacity. We show that economies at different stages of development invest different amounts for transitioning to clean energy since the benefits from the transition are higher when a higher proportion of GDP comes from energy-intensive sectors.
           </p>
+
+  <button class="read-more-button" onclick="toggleAbstract(this)">Read more</button>
+</div>
+
 
         </div>
       </div>
