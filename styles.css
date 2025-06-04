@@ -60,6 +60,7 @@ body {
     line-height: 1.6;
     z-index: 10;
     position: relative;
+    
 }
 
 .author-name {
@@ -186,7 +187,7 @@ nav a {
 .research-section-container {
     background-color: white;
     padding: 3rem 0;
-    margin-top: 3rem;
+    margin-top: 2rem;
     /*border-top: 1px solid #e6e6e6;*/
 }
 
@@ -620,7 +621,7 @@ footer {
 
     .profile-photo {
         margin-right: 0;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.0rem;
     }
 
     .paper {
@@ -641,6 +642,7 @@ footer {
     font-size: 1rem;
   }
 
+  
   .site-title {
     font-size: 1rem; /* downscale title on mobile */
   }
@@ -655,9 +657,10 @@ footer {
         font-size: 1.6rem;
     }
 
-    .author-bio {
+      .author-bio {
     font-size: 1.0rem;
-}
+    padding: 1.0rem;
+  }
 
 .read-more-button {
   font-size: 1.0rem;
@@ -730,3 +733,60 @@ p {
       font-size: 1.45rem; /* bigger font on laptops/desktops */
     }
   }
+
+  /* Better paragraph spacing for mobile */
+@media (max-width: 768px) {
+    .author-bio p {
+        margin-bottom: 1.2rem;
+    }
+    
+    .author-bio p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/* Mobile-first responsive approach */
+@media (max-width: 768px) {
+    .author-container {
+        margin: 2rem auto;
+        padding: 0 1rem; /* Reduce horizontal padding */
+        gap: 1.5rem;
+    }
+
+    .author-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .author-info {
+        flex: 1;
+        max-width: 100%; /* Use full width on mobile */
+        width: 100%;
+    }
+
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+        width: 250px; /* Slightly smaller on tablet */
+        height: 250px;
+    }
+
+    .author-bio {
+        font-size: 1.1rem; /* Slightly smaller but still readable */
+        max-width: 100%; /* Use full container width */
+        width: 100%;
+        margin: 0;
+        padding: 1.5rem 1rem; /* Reduce padding but keep some breathing room */
+        line-height: 1.6;
+        text-align: center; /* Left-align for better readability */
+
+    }
+
+    .author-name {
+        font-size: 2.2rem; /* Slightly reduce but keep impact */
+        margin-bottom: 1.5rem;
+    }
+}
