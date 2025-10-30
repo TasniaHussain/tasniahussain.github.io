@@ -761,6 +761,13 @@ p {
         margin-bottom: 1rem;
     }
 
+.section-header.no-border,
+.section-header.no-border h2,
+.no-border.section-header {
+  border: none !important;
+}
+
+
     .author-info {
         flex: 1;
         max-width: 100%; /* Use full width on mobile */
@@ -789,4 +796,20 @@ p {
         font-size: 2.2rem; /* Slightly reduce but keep impact */
         margin-bottom: 1.5rem;
     }
+}
+
+/* Remove underline line for specific sections */
+.section-header.no-border .section-title::after {
+  display: block; /* Keep underline visible */
+}
+
+/* Remove bottom border after the last paper in each section */
+.research-content .paper:last-child {
+  border-bottom: none !important;
+}
+
+/* Remove excess white space between stacked research sections */
+.research-section-container + .research-section-container {
+  margin-top: 0;
+  padding-top: 1rem;
 }
